@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-11-14 19:41:43.638414",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-11-14 20:56:52.521725",
+ "modified_by": "Administrator",
+ "module": "Riteserve ERP",
+ "name": "Number of Leads signed till September 2022",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT SUM(leads.total_leads) as \"Number Of Leads Signed Till September 2022:Int:400\" \r\nFROM (\r\n    SELECT\r\n        COUNT(*) as total_leads\r\n    FROM\r\n    \t`tabLeed`\r\n    WHERE\r\n        ifnull(signed_at, '') != '' AND\r\n        signed_at < \"2022-09-01 00:00:00\"\r\n    GROUP BY\r\n    \tsigned_at\r\n\t) leads;",
+ "ref_doctype": "Leed",
+ "report_name": "Number of Leads signed till September 2022",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

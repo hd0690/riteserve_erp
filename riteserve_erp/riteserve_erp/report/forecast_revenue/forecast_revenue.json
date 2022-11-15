@@ -1,0 +1,27 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2022-11-14 21:44:31.915262",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-11-14 22:37:47.166119",
+ "modified_by": "Administrator",
+ "module": "Riteserve ERP",
+ "name": "Forecast Revenue",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\r\n    lead as \"Lead:Data:250\",\r\n    stage as \"Stage:Data:150\",\r\n    SUM(amount) * 12 as \"Annual Revenue(Amount * 12):Currency:300\"\r\nFROM\r\n    `tabLeed`\r\nWHERE\r\n    stage in (\"Contracting\", \"Proposal\")\r\n    AND status not in (\"Churned\", \"Standby\")\r\nGROUP BY\r\n    lead;\r\n",
+ "ref_doctype": "Leed",
+ "report_name": "Forecast Revenue",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

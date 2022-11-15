@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include riteserve_erp *.css
+recursive-include riteserve_erp *.csv
+recursive-include riteserve_erp *.html
+recursive-include riteserve_erp *.ico
+recursive-include riteserve_erp *.js
+recursive-include riteserve_erp *.json
+recursive-include riteserve_erp *.md
+recursive-include riteserve_erp *.png
+recursive-include riteserve_erp *.py
+recursive-include riteserve_erp *.svg
+recursive-include riteserve_erp *.txt
+recursive-exclude riteserve_erp *.pyc

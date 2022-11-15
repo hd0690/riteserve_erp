@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "creation": "2022-11-14 18:30:58.718872",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lead",
+  "services",
+  "domain",
+  "channels",
+  "stage",
+  "status",
+  "amount",
+  "sale_representative",
+  "created_at",
+  "signed_at",
+  "closed_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "lead",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lead",
+   "reqd": 1
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Services",
+   "options": "MFLite\nMFPro\nAMC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "domain",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Domain",
+   "options": "Fintech\nEnterprise\nAMC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "channels",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Channels",
+   "options": "FP Fintech Distribution\nEnterprise Distribution\nAMC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stage",
+   "fieldtype": "Select",
+   "label": "Stage",
+   "options": "Prospect\nPayment\nDiscussion\nProposal\nContracting",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Churned\nSigned\nActive",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sale_representative",
+   "fieldtype": "Data",
+   "label": "Sale Representative",
+   "reqd": 1
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Date",
+   "label": "Created_at",
+   "reqd": 1
+  },
+  {
+   "fieldname": "signed_at",
+   "fieldtype": "Datetime",
+   "label": "Signed_at"
+  },
+  {
+   "fieldname": "closed_at",
+   "fieldtype": "Data",
+   "label": "Closed_at"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-15 11:39:02.041249",
+ "modified_by": "Administrator",
+ "module": "Riteserve ERP",
+ "name": "Leed",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "lead",
+ "track_changes": 1
+}

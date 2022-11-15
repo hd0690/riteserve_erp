@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-11-14 21:01:06.065046",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-11-14 21:56:51.893953",
+ "modified_by": "Administrator",
+ "module": "Riteserve ERP",
+ "name": "Lead Signed Till September 2022",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\r\n    lead as \"Lead Signed Till September 2022:Data:400\"\r\nFROM\r\n    `tabLeed`\r\nWHERE\r\n    ifnull(signed_at, '') != '' AND\r\n    signed_at < \"2022-09-01 00:00:00\"\r\n",
+ "ref_doctype": "Leed",
+ "report_name": "Lead Signed Till September 2022",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}
